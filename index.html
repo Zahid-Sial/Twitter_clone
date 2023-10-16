@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Twitter clone</title>
+  <link rel="stylesheet" href="assets/css/style.css" />
+
+
+  <!-- <style>
+
+    .test {
+      height: 200px;
+      width: 300px;
+      background-color: #1d9bf0;
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      margin-top: -100px;
+      margin-left: -150px;
+      z-index: 100000;
+    }
+
+  </style> -->
+</head>
+
+<body>
+  <!-- <div class="test">Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus rem ex nam laborum necessitatibus deleniti aspernatur, voluptatem impedit libero, molestiae delectus numquam distinctio inventore possimus aliquam corporis veniam. Exercitationem, inventore?</div> -->
+  <div class="main-container">
+
+    <!-- Left-Container -->
+
+    <div class="left-container">
+      <div class="left-sidebar">
+        <div class="logo hover-background">
+          <img src="assets/img/asset 27.svg" alt="logo" style="height: 31px; width: 31px" />
+        </div>
+        <div class="left-sidebar-options">
+          <div class="home content">
+            <div class="home-icon hover-background">
+              <img src="assets/img/asset 21.svg" alt="icon" style="height: 27px; width: 27px" />
+              <span style="font-weight: 600; font-size: 22px">Home</span>
+            </div>
+          </div>
+
+          <div class="explore content">
+            <div class="explore-icon hover-background">
+              <img src="assets/img/asset 22.svg" alt="explore" style="height: 27px; width: 27px" />
+              <span style="font-weight: 400; font-size: 22px">Explore</span>
+            </div>
+          </div>
+
+          <div class="notifications content">
+            <div class="notification-icon hover-background">
+              <img src="assets/img/asset 23.svg" alt="explore" style="height: 27px; width: 27px" />
+              <span style="font-weight: 400; font-size: 22px">Notifications</span>
+            </div>
+          </div>
+
+          <div class="messages content">
+            <div class="message-icon hover-background">
+              <img src="assets/img/asset 24.svg" alt="explore" style="height: 27px; width: 27px" />
+              <span style="font-weight: 400; font-size: 22px">Messages</span>
+            </div>
+          </div>
+
+          <div class="lists content">
+            <div class="list-icon hover-background">
+              <img src="assets/img/asset 25.svg" alt="explore" style="height: 27px; width: 27px" />
+              <span style="font-weight: 400; font-size: 22px">Lists</span>
+            </div>
+          </div>
+
+          <div class="communities content">
+            <div class="communities-icon hover-background">
+              <img src="assets/img/asset 26.svg" alt="explore" style="height: 27px; width: 27px" />
+              <span style="font-weight: 400; font-size: 22px">Communities</span>
+            </div>
+          </div>
+
+          <div class="premium content">
+            <div class="premium-icon hover-background">
+              <img src="assets/img/asset 27.svg" alt="explore" style="height: 27px; width: 27px" />
+              <span style="font-weight: 400; font-size: 22px">Premium</span>
+            </div>
+          </div>
+
+          <div class="profile content">
+            <div class="profile-icon hover-background">
+              <img src="assets/img/asset 28.svg" alt="explore" style="height: 27px; width: 27px" />
+              <span style="font-weight: 400; font-size: 22px">Profile</span>
+            </div>
+          </div>
+          <div class="more content">
+            <div class="more-icon hover-background">
+              <img src="assets/img/asset 29.svg" alt="explore" style="height: 27px; width: 27px" />
+              <span style="font-weight: 400; font-size: 22px">More</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="post-button">
+          <div>
+            <span style="font-weight: bold; font-size: 18px; color: white">Post</span>
+          </div>
+        </div>
+
+        <div class="account">
+          <img style="height: 40px; width: 40px; border-radius: 50%" src="assets/img/IMG_20230805_143241_421.jpg"
+            alt="picture" />
+          <div class="profile-name">
+            <div style="font-weight: 600; font-size: 16px">
+              Zahid Mursleen
+            </div>
+            <div style="font-size: 16px; color: #818181;">@mursleen_syal</div>
+          </div>
+          <div class="options">
+            <img style="height: 25px; width: 25px; padding-left: 5px" src="assets/img/asset 30.svg" alt="icon" />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Center-Container -->
+
+    <div class="center-container">
+      <div class="header glassmorhic-effect">
+        <h2>
+          <span class="header-content">Home</span>
+        </h2>
+      </div>
+      <div class="header-2 ">
+        <div class="tab-1 glassmorhic-effect">
+          <span style="color: #656565;">For you</span>
+        </div>
+        <div class="tab-1 hover-background glassmorhic-effect" style="
+              border-right: 0.5px solid rgb(233, 233, 233);
+              border-left: none;">
+          <span style="color: #656565;">Following</span>
+        </div>
+      </div>
+      <div class="post">
+        <div class="pic">
+          <div class="hover-color"></div>
+          <img class="profile-pic" src="assets/img/IMG_20230805_143241_421.jpg" alt="picture" />
+        </div>
+        <div class="header-post">
+          <input class="happening" type="text" placeholder="What is happening?!" />
+          <div class="icon">
+            <div class="header-icon">
+              <img class="media accent-colored-svg" src="assets/img/asset 34.svg" alt="" />
+            </div>
+            <div class="gift header-icon">
+              <img class="media accent-colored-svg" src="assets/img/asset 35.svg" alt="" />
+            </div>
+            <div class="poll header-icon">
+              <img class="media accent-colored-svg" src="assets/img/asset 36.svg" alt="" />
+            </div>
+            <div class="emoji header-icon">
+              <img class="media accent-colored-svg" src="assets/img/asset 37.svg" alt="" />
+            </div>
+            <div class="shedule header-icon">
+              <img class="media accent-colored-svg" src="assets/img/asset 38.svg" alt="" />
+            </div>
+            <div class="location header-icon">
+              <img class="media accent-colored-svg" src="assets/img/asset 39.svg" alt="" />
+            </div>
+            <div class="post-header">
+              <span style="font-size: 15px; font-weight: 700; color: white">Post</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- post-1 -->
+
+      <div class="main-post">
+        <div class="main-post-header">
+          <div class="post-profile ">
+            <div class="hover-color"></div>
+            <img style="height: 40px; width: 40px; border-radius: 50%" src="assets/img/8h1LvYF5_400x400.png" alt="" />
+          </div>
+          <div class="text">
+            <div class="post-title">
+              <a style="text-decoration: none" href="#">
+                <span style="font-weight: 700; font-size: 15px; color: black">Pakistan Cricket</span>
+              </a>
+              <img class="verified-symbol" src="assets/img/asset 47.svg" alt="" />
+              <a style="text-decoration: none" href="#"><span
+                  style="font-size: 15px; text-decoration: none; color: #656565">@TheRealPCB</span></a>
+              <div class="more-symbol ">
+                <img class="svg-color" style="height: 18px; width: 18px" src="assets/img/asset 30.svg" alt="" />
+              </div>
+            </div>
+            <div class="discription">
+              <span style="color: #3a3a3a;">Dominant showing in our first </span>
+              <a style="text-decoration: none; color: #1d9bf0" href="#">
+                #CWC2023</a>
+              <span>outing</span>
+              <img style="height: 18px; width: 18px; margin-left: 5px" src="assets/img/asset 14.svg" alt="" />
+              <br />
+              <span style="line-height: 60px; color: #3a3a3a;">All the bowlers chipped in to put up a clinical
+                performance</span>
+              <br />
+              <a style="text-decoration: none; color: #1d9bf0" href="#">#PAK VS NED</a>
+              <a style="text-decoration: none; color: #1d9bf0" href="#">
+                #DATTKEPAKISTANI</a>
+              <a style="text-decoration: none; color: #1d9bf0" href="#">
+                #WEWILLWIN</a>
+            </div>
+          </div>
+        </div>
+        <div class="post-picture">
+          <img style="
+                height: 480px;
+                width: 400px;
+                border-radius: 18px;
+                position: relative;
+                left: 50px;
+                top: 10px;
+              " src="assets/img/F7xKqi8bIAAjO9L.jpeg" alt="" />
+          <div class="reactions">
+            <div class="reactions-effect">
+              <div class="effects">
+                <img class="svg-color" style="height: 19px; width: 19px; border-radius: 50%"
+                  src="assets/img/asset 42.svg" alt="" />
+              </div>
+              <span style="font-size: 13px; padding-left: 5px;">6,633</span>
+            </div>
+
+            <div class="reactions-effect ">
+              <div class="effects retweet">
+                <img class="svg-color" style="height: 19px; width: 19px; border-radius: 50%"
+                  src="assets/img/asset 43.svg" alt="" />
+              </div>
+              <span class="retweet-counting">633</span>
+            </div>
+
+            <div class="reactions-effect">
+              <div class="effects like">
+                <img class="svg-color" style="height: 19px; width: 19px; border-radius: 50%;"
+                  src="assets/img/asset 44.svg" alt="" />
+              </div>
+              <span class="like-counting">9,933</span>
+            </div>
+
+            <div class="reactions-effect">
+              <div class="effects">
+                <img class="svg-color" style="height: 19px; width: 19px; border-radius: 50%;"
+                  src="assets/img/asset 45.svg" alt="" />
+              </div>
+              <span style="font-size: 13px; padding-left: 5px">30.6k</span>
+            </div>
+
+            <div class="reactions-effect">
+              <div class="effects">
+                <img class="svg-color" style="height: 19px; width: 19px; border-radius: 50%;"
+                  src="assets/img/asset 46.svg" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- post-2 -->
+      <div class="main-post">
+        <div class="main-post-header">
+          <div class="post-profile">
+            <div class="hover-color"></div>
+            <img style="height: 40px; width: 40px; border-radius: 50%;" src="assets/img/profile.jpg" alt="" />
+          </div>
+          <div class="text">
+            <div class="post-title">
+              <a style="text-decoration: none" href="#">
+                <span style="font-weight: 700; font-size: 15px; color: black">Shadab Khan</span>
+              </a>
+              <img class="verified-symbol verified-symbol-color" src="assets/img/asset 40.svg" alt="" />
+              <a style="text-decoration: none" href="#"><span
+                  style="font-size: 15px; text-decoration: none; color: #656565">@76ShadabKhan</span></a>
+              <div class="more-symbol">
+                <img class="svg-color" style="height: 18px; width: 18px" src="assets/img/asset 30.svg" alt="" />
+              </div>
+            </div>
+            <div class="discription">
+              <span style="color: #3a3a3a;">All geared up for World Cup. We will give it our all.We can achieve our<br>
+                goals with the support of our fans.We believe when you believe.</span>
+              >
+              <a style="text-decoration: none; color: #1d9bf0;" href="#">#PakistanZindabad</a>
+            </div>
+          </div>
+        </div>
+        <div class="post-picture">
+          <img style="
+                height: 480px;
+                width: 400px;
+                border-radius: 18px;
+                position: relative;
+                left: 50px;
+              " src="assets/img/F7xKqi8bIAAjO9L.jpeg" alt="" />
+          <div class="reactions">
+            <div class="reactions-effect">
+              <div class="effects">
+                <img style="height: 19px; width: 19px; border-radius: 50%" src="assets/img/asset 42.svg" alt="" />
+              </div>
+              <span style="font-size: 13px; padding-left: 5px">6,633</span>
+            </div>
+
+            <div class="reactions-effect ">
+              <div class="effects retweet">
+                <img class="svg-color" style="height: 19px; width: 19px; border-radius: 50%"
+                  src="assets/img/asset 43.svg" alt="" />
+              </div>
+              <span class="retweet-counting">5,533</span>
+            </div>
+
+            <div class="reactions-effect">
+              <div class="effects like">
+                <img class="svg-color" style="height: 19px; width: 18px; border-radius: 50%"
+                  src="assets/img/asset 44.svg" alt="" />
+              </div>
+              <span class="like-counting">257.8k</span>
+            </div>
+
+            <div class="reactions-effect">
+              <div class="effects">
+                <img class="svg-color" style="height: 19px; width: 19px; border-radius: 50%"
+                  src="assets/img/asset 45.svg" alt="" />
+              </div>
+              <span style="font-size: 13px; padding-left: 5px">530.6k</span>
+            </div>
+
+            <div class="reactions-effect">
+              <div class="effects">
+                <img class="svg-color" style="height: 19px; width: 19px; border-radius: 50%;"
+                  src="assets/img/asset 46.svg" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Right-Container -->
+
+    <div class="right-container">
+      <div class="right-sidebar">
+        <div class="search-bar">
+          <label for="search-input">
+            <img class="search-icon" src="assets/img/asset 51.svg" alt="icon" />
+          </label>
+          <input class="search" id="search-input" type="text" placeholder="Search" />
+        </div>
+
+        <div class="subscription">
+          <h2 style="line-height: 20px; font-size: 22px;">Subscribe to premium</h2>
+          <span style="font-size: 15px; color: black;font-weight: 700;line-height: 15px; padding-bottom: 5px;">Subscribe
+            to unlock new
+            features and if eligible, receive a share of ads revenue.</span>
+          <span style="height: 32px;
+              width: 100px;
+              display: flex;
+              align-items: center;
+              justify-content:center;
+              background-color: black;
+              color: white;
+              font-weight: bold;
+              border-radius: 20px;
+              cursor: pointer;">Subscribe</span>
+        </div>
+
+        <div class="trends">
+          <h2 class="title">Trends for you</h2>
+          <div class="trending">
+            <div class="trending-post" style="color: #656565;">
+              Trending in Pakistan
+              <div class="svg-img">
+                <img class="svg-color" style="height: 19px; width: 19px;" src="assets/img/asset 30.svg" alt="icon" />
+              </div>
+
+            </div>
+            <div style="font-size: 16px; font-weight: bold; margin-bottom: 2px">
+              #Babar Azam
+            </div>
+            <div style="font-size: 13px; margin-top: 2px;">21.1k posts</div>
+          </div>
+
+          <div class="trending">
+            <div class="trending-post" style="color: #656565;">
+              Trending in Sports
+              <div class="svg-img">
+                <img class="svg-color" style="height: 19px; width: 19px;" src="assets/img/asset 30.svg" alt="icon" />
+              </div>
+            </div>
+            <div style="font-size: 16px; font-weight: bold; margin-bottom: 2px">
+              #Shadab Khan
+            </div>
+            <div style="font-size: 13px; margin-top: 2px; color: #656565;">25.7k posts</div>
+          </div>
+
+          <div class="trending">
+            <div class="trending-post" style="color: #656565;">
+              Sports.Trending
+              <div class="svg-img">
+                <img class="svg-color" style="height: 19px; width: 19px;" src="assets/img/asset 30.svg" alt="icon" />
+              </div>
+            </div>
+            <div style="font-size: 16px; font-weight: bold; margin-bottom: 2px">
+              Rizwan
+            </div>
+            <div style="font-size: 13px; margin-top: 2px; color: #656565;">16.7k posts</div>
+          </div>
+
+          <div class="trending">
+            <div class="trending-post" style="color: #656565;">
+              Only on Twitter.Trending
+              <div class="svg-img">
+                <img class="svg-color" style="height: 19px; width: 19px;" src="assets/img/asset 30.svg" alt="icon" />
+              </div>
+            </div>
+            <div style="font-size: 16px; font-weight: bold; margin-bottom: 2px;">
+              #Yumna Zaidi
+            </div>
+            <div style="font-size: 13px; margin-top: 2px; color: #656565;">13.1k posts</div>
+          </div>
+
+          <div class="trending">
+            <div class="trending-post" style="color: #656565;">
+              Trending in Pakistan
+              <div class="svg-img">
+                <img class="svg-color" style="height: 19px; width: 19px;" src="assets/img/asset 30.svg" alt="icon" />
+              </div>
+            </div>
+            <div style="font-size: 16px; font-weight: bold; margin-bottom: 2px">
+              Fakhar
+            </div>
+            <div style="font-size: 13px; margin-top: 2px;color: #656565;">15.8k posts</div>
+          </div>
+
+          <div class="trending">
+            <div class="trending-post" style="color:#656565;">
+              Politics
+              <div class="svg-img">
+                <img class="svg-color" style="height: 19px; width: 19px;" src="assets/img/asset 30.svg" alt="icon" />
+              </div>
+            </div>
+            <div style="font-size: 16px; font-weight: bold; margin-bottom: 2px">
+              #Imran Khan
+            </div>
+            <div style="font-size: 13px; margin-top: 2px;color: #656565;">31.9k posts</div>
+          </div>
+
+          <div class="link trending">
+            <span style="font-size: 15px">Show more</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
