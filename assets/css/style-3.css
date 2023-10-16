@@ -1,0 +1,173 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: heavy-heading;
+    src: url(../fonts/chirp-extended-heavy-web.woff2);
+}
+
+.pre-parent-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position:fixed;
+    top: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: 5;
+    background-color: rgb(36, 45, 52,0.6);
+    overflow-y: auto;
+    overflow-x: auto;
+
+}
+
+.form-to-create-account{
+    height: 645px;
+    width: 600px;
+    min-width: 600px;
+    background-color: #000000;
+    border-radius: 25px;
+}
+
+.header{
+    height: 130px;
+    width: 100%;
+    padding-left: 80px;
+    padding-right: 80px;
+}
+.header-line-1{
+    display: flex;
+    align-items: center;
+    height: 53px;
+    width: 100%;
+    color: white;
+}
+.header-line-2{
+    font-family: heavy-heading;
+    display: flex;
+    align-items: center;
+    height: 76px;
+    width: 100%;
+    color: white;
+}
+
+.enter-data{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 335px;
+    width: 100%;
+}
+
+.form-style{
+    justify-content: space-between;
+    height: 58px;
+    width: 100%;
+}
+
+.d-o-f{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 58px;
+    width: 100%;
+}
+
+
+.input-tag-style{
+    height: 100%;
+    width: 100%;
+    outline: none;
+    border: none;
+    background-color: black;
+    color: #777c81;
+    border: 0.3px solid #777c81;
+    border-radius: 4px;
+    padding: 12px 8px;
+    font-size: 17px;
+    transition: step-end;
+    transition-duration: 0.01s;
+    transition-timing-function: ease-out;
+}
+.input-tag-style:focus{
+    border: 2px solid #1D9BF0;
+    font-size: large;
+}
+
+.box-1{
+    height: 100%;
+    width: 187px;
+    background-color: #000000;
+    color: white;
+    font-size: 17px;
+    outline: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.box-1:focus{
+    border:2px solid #1D9BF0 ;
+    border-radius: 4px;
+}
+
+.box-2{
+    height: 100%;
+    width: 85px;
+    background-color: #000000;
+    color: white;
+    font-size: 17px;
+    outline: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 18px;
+    padding-left: 3px;
+
+}
+
+.box-2:focus{
+    border:2px solid #1D9BF0 ;
+    border-radius: 4px;
+}
+
+.box-3{
+    height: 100%;
+    width: 105px;
+    background-color: #000000;
+    color: white;
+    font-size: 17px;
+    outline: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 18px;
+    padding-left: 5px;
+}
+
+.box-3:focus{
+    border:2px solid #1D9BF0 ;
+    border-radius: 4px;
+}
+
+.submit-form{
+    display: flex;
+    justify-content: center;
+    height: 100px;
+    width:100%;
+    margin-top: 80px;
+}
+
+.button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 52px;
+    background-color: #787a7a;
+    border-radius: 25px;
+    margin-top: 24px;
+    cursor: pointer;
+    font-family: heavy-heading;
+
+}
